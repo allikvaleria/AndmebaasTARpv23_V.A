@@ -40,8 +40,11 @@
             this.andmebaasDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kustuta_btn = new System.Windows.Forms.Button();
             this.uuenda_btn = new System.Windows.Forms.Button();
+            this.pildiOtsing_btn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.andmebaasDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -102,6 +105,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(608, 223);
             this.dataGridView1.TabIndex = 7;
+            this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
             // lisa_btn
             // 
@@ -136,11 +140,32 @@
             this.uuenda_btn.UseVisualStyleBackColor = true;
             this.uuenda_btn.Click += new System.EventHandler(this.uuenda_btn_Click);
             // 
+            // pildiOtsing_btn
+            // 
+            this.pildiOtsing_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.pildiOtsing_btn.Location = new System.Drawing.Point(389, 152);
+            this.pildiOtsing_btn.Name = "pildiOtsing_btn";
+            this.pildiOtsing_btn.Size = new System.Drawing.Size(118, 35);
+            this.pildiOtsing_btn.TabIndex = 12;
+            this.pildiOtsing_btn.Text = "Pildi otsing";
+            this.pildiOtsing_btn.UseVisualStyleBackColor = true;
+            this.pildiOtsing_btn.Click += new System.EventHandler(this.pildiOtsing_btn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(238, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(387, 147);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pildiOtsing_btn);
             this.Controls.Add(this.uuenda_btn);
             this.Controls.Add(this.kustuta_btn);
             this.Controls.Add(this.lisa_btn);
@@ -155,6 +180,7 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.andmebaasDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,6 +199,8 @@
         private System.Windows.Forms.Button lisa_btn;
         private System.Windows.Forms.Button kustuta_btn;
         private System.Windows.Forms.Button uuenda_btn;
+        private System.Windows.Forms.Button pildiOtsing_btn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
